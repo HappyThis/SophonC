@@ -83,7 +83,7 @@
          <bool>false</bool>
         </attribute>
         <attribute name="horizontalHeaderStretchLastSection">
-         <bool>false</bool>
+         <bool>true</bool>
         </attribute>
         <attribute name="verticalHeaderVisible">
          <bool>false</bool>
@@ -123,64 +123,16 @@
         </column>
        </widget>
       </item>
-      <item row="1" column="1">
-       <widget class="QTableWidget" name="tableWidgetOfAdd">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-          <horstretch>3</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="focusPolicy">
-         <enum>Qt::NoFocus</enum>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::NoFrame</enum>
-        </property>
-        <property name="selectionBehavior">
-         <enum>QAbstractItemView::SelectRows</enum>
-        </property>
-        <property name="showGrid">
-         <bool>false</bool>
-        </property>
-        <attribute name="verticalHeaderVisible">
-         <bool>false</bool>
-        </attribute>
-        <column>
-         <property name="text">
-          <string>上线序号(隐藏)</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>IP地址</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>系统</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>计算机名称</string>
-         </property>
-        </column>
-       </widget>
-      </item>
      </layout>
     </item>
     <item>
      <widget class="QTabWidget" name="QTW">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="Q3">
        <attribute name="icon">
-        <iconset resource="SophonC.qrc">
+        <iconset>
          <normaloff>:/SophonC/info.ico</normaloff>:/SophonC/info.ico</iconset>
        </attribute>
        <attribute name="title">
@@ -288,7 +240,7 @@
                <string>文件接收地址：default</string>
               </property>
               <property name="icon">
-               <iconset resource="SophonC.qrc">
+               <iconset>
                 <normaloff>:/SophonC/recv.ico</normaloff>:/SophonC/recv.ico</iconset>
               </property>
              </widget>
@@ -301,7 +253,7 @@
       </widget>
       <widget class="QWidget" name="Q1">
        <attribute name="icon">
-        <iconset resource="SophonC.qrc">
+        <iconset>
          <normaloff>:/SophonC/file.ico</normaloff>:/SophonC/file.ico</iconset>
        </attribute>
        <attribute name="title">
@@ -346,7 +298,7 @@
                <string>加入文件发送队列</string>
               </property>
               <property name="icon">
-               <iconset resource="SophonC.qrc">
+               <iconset>
                 <normaloff>:/SophonC/queue.ico</normaloff>:/SophonC/queue.ico</iconset>
               </property>
              </widget>
@@ -357,7 +309,7 @@
                <string>发送</string>
               </property>
               <property name="icon">
-               <iconset resource="SophonC.qrc">
+               <iconset>
                 <normaloff>:/SophonC/send.ico</normaloff>:/SophonC/send.ico</iconset>
               </property>
              </widget>
@@ -368,7 +320,7 @@
                <string>清空文件发送队列</string>
               </property>
               <property name="icon">
-               <iconset resource="SophonC.qrc">
+               <iconset>
                 <normaloff>:/SophonC/clear.ico</normaloff>:/SophonC/clear.ico</iconset>
               </property>
              </widget>
@@ -379,7 +331,7 @@
                <string>NULL</string>
               </property>
               <property name="icon">
-               <iconset resource="SophonC.qrc">
+               <iconset>
                 <normaloff>:/SophonC/chooseLocalFile.ico</normaloff>:/SophonC/chooseLocalFile.ico</iconset>
               </property>
              </widget>
@@ -426,7 +378,7 @@
       </widget>
       <widget class="QWidget" name="Q2">
        <attribute name="icon">
-        <iconset resource="SophonC.qrc">
+        <iconset>
          <normaloff>:/SophonC/spy.ico</normaloff>:/SophonC/spy.ico</iconset>
        </attribute>
        <attribute name="title">
@@ -435,7 +387,7 @@
       </widget>
       <widget class="QWidget" name="Q4">
        <attribute name="icon">
-        <iconset resource="SophonC.qrc">
+        <iconset>
          <normaloff>:/SophonC/limit.ico</normaloff>:/SophonC/limit.ico</iconset>
        </attribute>
        <attribute name="title">
@@ -505,7 +457,7 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOfStart">
    <property name="icon">
-    <iconset resource="SophonC.qrc">
+    <iconset>
      <normaloff>:/SophonC/start.ico</normaloff>:/SophonC/start.ico</iconset>
    </property>
    <property name="text">
@@ -514,7 +466,7 @@
   </action>
   <action name="actions">
    <property name="icon">
-    <iconset resource="SophonC.qrc">
+    <iconset>
      <normaloff>:/SophonC/settings.ico</normaloff>:/SophonC/settings.ico</iconset>
    </property>
    <property name="text">
@@ -533,8 +485,6 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="SophonC.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

@@ -42,7 +42,6 @@ public:
     QVBoxLayout *verticalLayout_2;
     QGridLayout *gridLayout;
     QTableWidget *tableWidget;
-    QTableWidget *tableWidgetOfAdd;
     QTabWidget *QTW;
     QWidget *Q3;
     QHBoxLayout *horizontalLayout_2;
@@ -142,37 +141,11 @@ public:
         tableWidget->setTextElideMode(Qt::ElideMiddle);
         tableWidget->setShowGrid(false);
         tableWidget->horizontalHeader()->setHighlightSections(false);
-        tableWidget->horizontalHeader()->setStretchLastSection(false);
+        tableWidget->horizontalHeader()->setStretchLastSection(true);
         tableWidget->verticalHeader()->setVisible(false);
         tableWidget->verticalHeader()->setStretchLastSection(false);
 
         gridLayout->addWidget(tableWidget, 1, 0, 1, 1);
-
-        tableWidgetOfAdd = new QTableWidget(centralWidget);
-        if (tableWidgetOfAdd->columnCount() < 4)
-            tableWidgetOfAdd->setColumnCount(4);
-        QTableWidgetItem *__qtablewidgetitem6 = new QTableWidgetItem();
-        tableWidgetOfAdd->setHorizontalHeaderItem(0, __qtablewidgetitem6);
-        QTableWidgetItem *__qtablewidgetitem7 = new QTableWidgetItem();
-        tableWidgetOfAdd->setHorizontalHeaderItem(1, __qtablewidgetitem7);
-        QTableWidgetItem *__qtablewidgetitem8 = new QTableWidgetItem();
-        tableWidgetOfAdd->setHorizontalHeaderItem(2, __qtablewidgetitem8);
-        QTableWidgetItem *__qtablewidgetitem9 = new QTableWidgetItem();
-        tableWidgetOfAdd->setHorizontalHeaderItem(3, __qtablewidgetitem9);
-        tableWidgetOfAdd->setObjectName(QString::fromUtf8("tableWidgetOfAdd"));
-        tableWidgetOfAdd->setEnabled(true);
-        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
-        sizePolicy1.setHorizontalStretch(3);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(tableWidgetOfAdd->sizePolicy().hasHeightForWidth());
-        tableWidgetOfAdd->setSizePolicy(sizePolicy1);
-        tableWidgetOfAdd->setFocusPolicy(Qt::NoFocus);
-        tableWidgetOfAdd->setFrameShape(QFrame::NoFrame);
-        tableWidgetOfAdd->setSelectionBehavior(QAbstractItemView::SelectRows);
-        tableWidgetOfAdd->setShowGrid(false);
-        tableWidgetOfAdd->verticalHeader()->setVisible(false);
-
-        gridLayout->addWidget(tableWidgetOfAdd, 1, 1, 1, 1);
 
 
         verticalLayout_2->addLayout(gridLayout);
@@ -335,12 +308,12 @@ public:
         tableOfFileSend = new QTableWidget(Q1);
         if (tableOfFileSend->columnCount() < 3)
             tableOfFileSend->setColumnCount(3);
-        QTableWidgetItem *__qtablewidgetitem10 = new QTableWidgetItem();
-        tableOfFileSend->setHorizontalHeaderItem(0, __qtablewidgetitem10);
-        QTableWidgetItem *__qtablewidgetitem11 = new QTableWidgetItem();
-        tableOfFileSend->setHorizontalHeaderItem(1, __qtablewidgetitem11);
-        QTableWidgetItem *__qtablewidgetitem12 = new QTableWidgetItem();
-        tableOfFileSend->setHorizontalHeaderItem(2, __qtablewidgetitem12);
+        QTableWidgetItem *__qtablewidgetitem6 = new QTableWidgetItem();
+        tableOfFileSend->setHorizontalHeaderItem(0, __qtablewidgetitem6);
+        QTableWidgetItem *__qtablewidgetitem7 = new QTableWidgetItem();
+        tableOfFileSend->setHorizontalHeaderItem(1, __qtablewidgetitem7);
+        QTableWidgetItem *__qtablewidgetitem8 = new QTableWidgetItem();
+        tableOfFileSend->setHorizontalHeaderItem(2, __qtablewidgetitem8);
         tableOfFileSend->setObjectName(QString::fromUtf8("tableOfFileSend"));
         tableOfFileSend->setEditTriggers(QAbstractItemView::NoEditTriggers);
         tableOfFileSend->setSelectionBehavior(QAbstractItemView::SelectRows);
@@ -400,7 +373,7 @@ public:
 
         retranslateUi(SophonCClass);
 
-        QTW->setCurrentIndex(1);
+        QTW->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(SophonCClass);
@@ -425,14 +398,6 @@ public:
         ___qtablewidgetitem4->setText(QApplication::translate("SophonCClass", "\344\270\212\347\272\277\346\227\266\351\227\264", nullptr));
         QTableWidgetItem *___qtablewidgetitem5 = tableWidget->horizontalHeaderItem(5);
         ___qtablewidgetitem5->setText(QApplication::translate("SophonCClass", "\350\207\252\345\256\232\344\271\211\344\270\212\347\272\277\344\277\241\346\201\257", nullptr));
-        QTableWidgetItem *___qtablewidgetitem6 = tableWidgetOfAdd->horizontalHeaderItem(0);
-        ___qtablewidgetitem6->setText(QApplication::translate("SophonCClass", "\344\270\212\347\272\277\345\272\217\345\217\267(\351\232\220\350\227\217)", nullptr));
-        QTableWidgetItem *___qtablewidgetitem7 = tableWidgetOfAdd->horizontalHeaderItem(1);
-        ___qtablewidgetitem7->setText(QApplication::translate("SophonCClass", "IP\345\234\260\345\235\200", nullptr));
-        QTableWidgetItem *___qtablewidgetitem8 = tableWidgetOfAdd->horizontalHeaderItem(2);
-        ___qtablewidgetitem8->setText(QApplication::translate("SophonCClass", "\347\263\273\347\273\237", nullptr));
-        QTableWidgetItem *___qtablewidgetitem9 = tableWidgetOfAdd->horizontalHeaderItem(3);
-        ___qtablewidgetitem9->setText(QApplication::translate("SophonCClass", "\350\256\241\347\256\227\346\234\272\345\220\215\347\247\260", nullptr));
         labelOfShowTime->setText(QApplication::translate("SophonCClass", "\344\270\212\347\272\277\346\227\266\351\227\264:", nullptr));
         labelOfShowName->setText(QApplication::translate("SophonCClass", "\350\256\241\347\256\227\346\234\272\345\220\215\347\247\260:", nullptr));
         labelOfShowNumber->setText(QApplication::translate("SophonCClass", "\344\270\212\347\272\277\345\272\217\345\217\267:", nullptr));
@@ -450,12 +415,12 @@ public:
         fileSend->setText(QApplication::translate("SophonCClass", "\345\217\221\351\200\201", nullptr));
         clearFileSendingQueue->setText(QApplication::translate("SophonCClass", "\346\270\205\347\251\272\346\226\207\344\273\266\345\217\221\351\200\201\351\230\237\345\210\227", nullptr));
         chooleFile->setText(QApplication::translate("SophonCClass", "NULL", nullptr));
-        QTableWidgetItem *___qtablewidgetitem10 = tableOfFileSend->horizontalHeaderItem(0);
-        ___qtablewidgetitem10->setText(QApplication::translate("SophonCClass", "\344\270\212\347\272\277\345\272\217\345\217\267", nullptr));
-        QTableWidgetItem *___qtablewidgetitem11 = tableOfFileSend->horizontalHeaderItem(1);
-        ___qtablewidgetitem11->setText(QApplication::translate("SophonCClass", "\345\217\221\351\200\201\347\212\266\346\200\201", nullptr));
-        QTableWidgetItem *___qtablewidgetitem12 = tableOfFileSend->horizontalHeaderItem(2);
-        ___qtablewidgetitem12->setText(QApplication::translate("SophonCClass", "\350\277\234\347\250\213\346\226\207\344\273\266\345\255\230\346\224\276\344\275\215\347\275\256", nullptr));
+        QTableWidgetItem *___qtablewidgetitem6 = tableOfFileSend->horizontalHeaderItem(0);
+        ___qtablewidgetitem6->setText(QApplication::translate("SophonCClass", "\344\270\212\347\272\277\345\272\217\345\217\267", nullptr));
+        QTableWidgetItem *___qtablewidgetitem7 = tableOfFileSend->horizontalHeaderItem(1);
+        ___qtablewidgetitem7->setText(QApplication::translate("SophonCClass", "\345\217\221\351\200\201\347\212\266\346\200\201", nullptr));
+        QTableWidgetItem *___qtablewidgetitem8 = tableOfFileSend->horizontalHeaderItem(2);
+        ___qtablewidgetitem8->setText(QApplication::translate("SophonCClass", "\350\277\234\347\250\213\346\226\207\344\273\266\345\255\230\346\224\276\344\275\215\347\275\256", nullptr));
         QTW->setTabText(QTW->indexOf(Q1), QApplication::translate("SophonCClass", "\346\226\207\344\273\266\345\210\206\345\217\221", nullptr));
         QTW->setTabText(QTW->indexOf(Q2), QApplication::translate("SophonCClass", "\345\244\232\345\261\217\347\233\221\346\216\247", nullptr));
         QTW->setTabText(QTW->indexOf(Q4), QApplication::translate("SophonCClass", "\345\212\237\350\203\275\351\231\220\345\210\266", nullptr));

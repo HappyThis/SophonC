@@ -41,7 +41,7 @@ SophonC::SophonC(QMainWindow *parent)
 
 	QObject::connect(ui.tableWidget, SIGNAL(cellDoubleClicked(int, int)), this, SLOT(DoubleClickedToAdd(int, int)));
 
-	QObject::connect(ui.tableWidgetOfAdd, SIGNAL(cellDoubleClicked(int, int)), this, SLOT(DoubleClickedToDel(int, int)));
+//	QObject::connect(ui.tableWidgetOfAdd, SIGNAL(cellDoubleClicked(int, int)), this, SLOT(DoubleClickedToDel(int, int)));
 
 	QObject::connect(ui.tableWidget, SIGNAL(itemClicked(QTableWidgetItem *)), this, SLOT(itemClickedToReflashInfo(QTableWidgetItem *)));
 
@@ -58,7 +58,8 @@ SophonC::SophonC(QMainWindow *parent)
 	ui.statusBar->addPermanentWidget(permanent);
 
 
-	//ui.tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+//	ui.tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+//	ui.tableWidget->horizontalHeader()->setStretchLastSection(true);
 
 	ui.tableWidget->setContextMenuPolicy(Qt::CustomContextMenu);
 
