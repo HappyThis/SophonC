@@ -17,6 +17,7 @@ Sophon是基于C/S架构、采用Qt(c++)开发的远程控制系统，具有文�
 + Server端需要安装winpcap[https://www.winpcap.org/]
 + S/C端需要Qt的支持，两者都需要Qt的核心模块，GUI模块，其中Client还需要图表模块
 + S/C端与Qt编译器都需要编译为x86而不是64
++ 对于Server端，config.int用于配置目标ip地址
 ---
 #### 运行截图如下
 ![打开界面](https://github.com/HappyThis/SophonC/blob/master/screenshot/%E5%90%AF%E5%8A%A8.png)
