@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/SophonC">
+        <file alias="chooseLocalFile.ico">Res/chooseLocalFile.ico</file>
+        <file alias="clear.ico">Res/clear.ico</file>
+        <file alias="disk.ico">Res/disk.ico</file>
+        <file alias="file.ico">Res/file.ico</file>
+        <file alias="info.ico">Res/info.ico</file>
+        <file alias="limit.ico">Res/limit.ico</file>
+        <file alias="logo.ico">Res/logo.ico</file>
+        <file alias="queue.ico">Res/queue.ico</file>
+        <file alias="recv.ico">Res/recv.ico</file>
+        <file alias="send.ico">Res/send.ico</file>
+        <file alias="settings.ico">Res/settings.ico</file>
+        <file alias="spy.ico">Res/spy.ico</file>
+        <file alias="start.ico">Res/start.ico</file>
+    </qresource>
+</RCC>

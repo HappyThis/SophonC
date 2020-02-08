@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files\IOCP">
+      <UniqueIdentifier>{bd627b4c-1ebe-423c-804f-c4f775779be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\基功能">
+      <UniqueIdentifier>{1700573d-0f62-4ef4-96b2-9af89764df60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\网络功能">
+      <UniqueIdentifier>{4a365064-9773-4d35-9ad1-1d47413da289}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IOCP">
+      <UniqueIdentifier>{e3a82f77-87c8-40a0-83db-030747fc28dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\网络功能">
+      <UniqueIdentifier>{08fc8668-d6c8-49bb-bd83-23813a786244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\基功能">
+      <UniqueIdentifier>{22e4ced7-9880-4bee-9559-2061978703bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\主界面UI">
+      <UniqueIdentifier>{f07a0ea1-84c5-4a15-b211-1446921887fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\主界面UI">
+      <UniqueIdentifier>{d6cc5a47-5e98-40e3-b4e9-810abb8c9cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\远程命令行">
+      <UniqueIdentifier>{bc7d6006-2d13-424a-8982-f100ebc39c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\远程命令行">
+      <UniqueIdentifier>{9ce69c57-de02-4b85-bae1-61618c41ed78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\文件分发">
+      <UniqueIdentifier>{0b07e8e1-67b6-4631-a468-fac2be0789cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\文件分发">
+      <UniqueIdentifier>{0b58e322-f417-424f-a913-f58726c1fc13}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SophonC.cpp">
+      <Filter>Source Files\主界面UI</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCP\IocpServer.cpp">
+      <Filter>Source Files\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCP\Linker.cpp">
+      <Filter>Source Files\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCP\LinkerManager.cpp">
+      <Filter>Source Files\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="BasisFunction\BasisFunction.cpp">
+      <Filter>Source Files\基功能</Filter>
+    </ClCompile>
+    <ClCompile Include="Funtion_Network\CustomSlice.cpp">
+      <Filter>Source Files\网络功能</Filter>
+    </ClCompile>
+    <ClCompile Include="Funtion_Network\NetworkServer.cpp">
+      <Filter>Source Files\网络功能</Filter>
+    </ClCompile>
+    <ClCompile Include="Funtion_Network\RemoteCapture.cpp">
+      <Filter>Source Files\网络功能</Filter>
+    </ClCompile>
+    <ClCompile Include="Funtion_Network\ThreadOfRemoteCapture.cpp">
+      <Filter>Source Files\网络功能</Filter>
+    </ClCompile>
+    <ClCompile Include="Function_File\ChooseLocalFile.cpp">
+      <Filter>Source Files\文件分发</Filter>
+    </ClCompile>
+    <ClCompile Include="Function_File\ChoosePath.cpp">
+      <Filter>Source Files\文件分发</Filter>
+    </ClCompile>
+    <ClCompile Include="Function_File\FileSend.cpp">
+      <Filter>Source Files\文件分发</Filter>
+    </ClCompile>
+    <ClCompile Include="Funtion_Cmd\RemoteCmd.cpp">
+      <Filter>Source Files\远程命令行</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCP\RingBuffer.cpp">
+      <Filter>Source Files\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="BasisFunction\MainFunction.cpp">
+      <Filter>Source Files\基功能</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SophonC.h">
+      <Filter>Header Files\主界面UI</Filter>
+    </QtMoc>
+    <QtMoc Include="IOCP\IocpServer.h">
+      <Filter>Header Files\IOCP</Filter>
+    </QtMoc>
+    <QtMoc Include="IOCP\LinkerManager.h">
+      <Filter>Header Files\IOCP</Filter>
+    </QtMoc>
+    <QtMoc Include="Funtion_Cmd\RemoteCmd.h">
+      <Filter>Header Files\远程命令行</Filter>
+    </QtMoc>
+    <QtMoc Include="Function_File\ChooseLocalFile.h">
+      <Filter>Header Files\文件分发</Filter>
+    </QtMoc>
+    <QtMoc Include="Function_File\ChoosePath.h">
+      <Filter>Header Files\文件分发</Filter>
+    </QtMoc>
+    <QtMoc Include="Function_File\FileSend.h">
+      <Filter>Header Files\文件分发</Filter>
+    </QtMoc>
+    <QtMoc Include="Funtion_Network\CustomSlice.h">
+      <Filter>Header Files\网络功能</Filter>
+    </QtMoc>
+    <QtMoc Include="Funtion_Network\NetworkServer.h">
+      <Filter>Header Files\网络功能</Filter>
+    </QtMoc>
+    <QtMoc Include="Funtion_Network\RemoteCapture.h">
+      <Filter>Header Files\网络功能</Filter>
+    </QtMoc>
+    <QtMoc Include="Funtion_Network\ThreadOfRemoteCapture.h">
+      <Filter>Header Files\网络功能</Filter>
+    </QtMoc>
+    <QtMoc Include="BasisFunction\BasisFunction.h">
+      <Filter>Header Files\基功能</Filter>
+    </QtMoc>
+    <QtMoc Include="BasisFunction\MainFunction.h">
+      <Filter>Header Files\基功能</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="SophonC.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SophonC.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCP\Linker.h">
+      <Filter>Header Files\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCP\RingBuffer.h">
+      <Filter>Header Files\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="Funtion_Network\Header.h">
+      <Filter>Header Files\网络功能</Filter>
+    </ClInclude>
+    <ClInclude Include="Funtion_Network\IpContainerUnit.h">
+      <Filter>Header Files\网络功能</Filter>
+    </ClInclude>
+    <ClInclude Include="Funtion_Network\RemoteCaptureUint.h">
+      <Filter>Header Files\网络功能</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCP\Token.h">
+      <Filter>Header Files\IOCP</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Ui\ChooseLocalFile.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Ui\ChoosePath.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Ui\FileSend.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Ui\NetworkServer.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Ui\RemoteCapture.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Ui\RemoteCmd.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Ui\SophonC.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>

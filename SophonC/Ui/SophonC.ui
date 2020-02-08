@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SophonCClass</class>
+ <widget class="QMainWindow" name="SophonCClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1249</width>
+    <height>735</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SophonC</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="1" column="0">
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>5</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="defaultDropAction">
+         <enum>Qt::IgnoreAction</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="textElideMode">
+         <enum>Qt::ElideMiddle</enum>
+        </property>
+        <property name="showGrid">
+         <bool>false</bool>
+        </property>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string extracomment="nihao">上线序号(隐藏)</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>IP地址</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>系统</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>计算机名称</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>上线时间</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>自定义上线信息</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QTableWidget" name="tableWidgetOfAdd">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>3</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="showGrid">
+         <bool>false</bool>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>上线序号(隐藏)</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>IP地址</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>系统</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>计算机名称</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="QTW">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="Q3">
+       <attribute name="icon">
+        <iconset resource="SophonC.qrc">
+         <normaloff>:/SophonC/info.ico</normaloff>:/SophonC/info.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>详细信息</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0,3">
+          <item>
+           <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0,0" columnstretch="0,0" rowminimumheight="0,0,0,0,0">
+            <item row="4" column="0">
+             <widget class="QLabel" name="labelOfShowTime">
+              <property name="text">
+               <string>上线时间:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="labelOfShowName">
+              <property name="text">
+               <string>计算机名称:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelOfShowNumber">
+              <property name="text">
+               <string>上线序号:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelOfShowOs">
+              <property name="text">
+               <string>操作系统:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="labelOfShowIp">
+              <property name="text">
+               <string>IP地址:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="labelOfNumber">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="labelOfIp">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="labelOfName">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLabel" name="labelOfTime">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLabel" name="labelOfOs">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLabel" name="labelOfHardware">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonOfRemotePath">
+              <property name="text">
+               <string>文件接收地址：default</string>
+              </property>
+              <property name="icon">
+               <iconset resource="SophonC.qrc">
+                <normaloff>:/SophonC/recv.ico</normaloff>:/SophonC/recv.ico</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Q1">
+       <attribute name="icon">
+        <iconset resource="SophonC.qrc">
+         <normaloff>:/SophonC/file.ico</normaloff>:/SophonC/file.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>文件分发</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout" stretch="1,2,15">
+          <property name="spacing">
+           <number>7</number>
+          </property>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,0,0,1">
+            <item>
+             <widget class="QPushButton" name="addFileSendingQueue">
+              <property name="text">
+               <string>加入文件发送队列</string>
+              </property>
+              <property name="icon">
+               <iconset resource="SophonC.qrc">
+                <normaloff>:/SophonC/queue.ico</normaloff>:/SophonC/queue.ico</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="fileSend">
+              <property name="text">
+               <string>发送</string>
+              </property>
+              <property name="icon">
+               <iconset resource="SophonC.qrc">
+                <normaloff>:/SophonC/send.ico</normaloff>:/SophonC/send.ico</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="clearFileSendingQueue">
+              <property name="text">
+               <string>清空文件发送队列</string>
+              </property>
+              <property name="icon">
+               <iconset resource="SophonC.qrc">
+                <normaloff>:/SophonC/clear.ico</normaloff>:/SophonC/clear.ico</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="chooleFile">
+              <property name="text">
+               <string>NULL</string>
+              </property>
+              <property name="icon">
+               <iconset resource="SophonC.qrc">
+                <normaloff>:/SophonC/chooseLocalFile.ico</normaloff>:/SophonC/chooseLocalFile.ico</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tableOfFileSend">
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderStretchLastSection">
+             <bool>false</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>上线序号</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>发送状态</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>远程文件存放位置</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Q2">
+       <attribute name="icon">
+        <iconset resource="SophonC.qrc">
+         <normaloff>:/SophonC/spy.ico</normaloff>:/SophonC/spy.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>多屏监控</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="Q4">
+       <attribute name="icon">
+        <iconset resource="SophonC.qrc">
+         <normaloff>:/SophonC/limit.ico</normaloff>:/SophonC/limit.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>功能限制</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1249</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>153</y>
+      <width>170</width>
+      <height>104</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>启动选项</string>
+    </property>
+    <addaction name="actionOfStart"/>
+    <addaction name="actionOfRedirect"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="geometry">
+     <rect>
+      <x>346</x>
+      <y>153</y>
+      <width>149</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>相关设置</string>
+    </property>
+    <addaction name="actions"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="geometry">
+     <rect>
+      <x>387</x>
+      <y>153</y>
+      <width>137</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action1"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOfStart">
+   <property name="icon">
+    <iconset resource="SophonC.qrc">
+     <normaloff>:/SophonC/start.ico</normaloff>:/SophonC/start.ico</iconset>
+   </property>
+   <property name="text">
+    <string>启动网络服务</string>
+   </property>
+  </action>
+  <action name="actions">
+   <property name="icon">
+    <iconset resource="SophonC.qrc">
+     <normaloff>:/SophonC/settings.ico</normaloff>:/SophonC/settings.ico</iconset>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="action1">
+   <property name="text">
+    <string>说明</string>
+   </property>
+  </action>
+  <action name="actionOfRedirect">
+   <property name="text">
+    <string>重定向IP地址</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="SophonC.qrc"/>
+ </resources>
+ <connections/>
+</ui>
